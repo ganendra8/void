@@ -1,0 +1,45 @@
+Write the program for following statement by using three, single, zero address instructions.
+X = (A+B*C-D)/(E*F+G)
+
+Three Address Instruction
+
+MUL R1, B, C
+ADD R2, A, R1
+SUB R3, R2, D
+MUL R4, E, F
+ADD R5, R4, G
+DIV X, R3, R5
+
+
+Zero Address Instruction
+
+PUSH A
+PUSH B
+PUSH C
+MUL
+ADD
+PUSH D
+SUB
+PUSH E
+PUSH F
+MUL
+PUSH G
+ADD
+DIV
+
+Single Address Instruction
+
+LOAD B
+MUL C
+STORE T
+LOAD A
+ADD T
+SUB D
+STORE M
+LOAD E
+MUL F
+ADD G
+STORE N
+LOAD M
+DIV N
+STORE X
