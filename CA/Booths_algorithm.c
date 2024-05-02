@@ -1,4 +1,4 @@
-#include <iostream>
+#include <stdio.h>
 #include <math.h>
 int a = 0, b = 0, c = 0, a1 = 0, b1 = 0, com[5] = {1, 0, 0, 0, 0};
 int anum[5] = {0}, anumcp[5] = {0}, bnum[5] = {0};
@@ -154,7 +154,7 @@ int main()
         { // subtract and shift for 10
             printf("\n-->");
             printf("\nSUB B: ");
-            add(bcomp); // add two's complement to implement subtraction
+            add(bcomp);
             arshift();
             q = anum[i];
         }
